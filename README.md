@@ -8,8 +8,9 @@
 
 ## License
 
-The base code for the original Space Station 14 game is registered under [MIT](https://github.com/Tornado-Technology/after-rain/blob/master/SS14-LICENSE.TXT)
-All after-rain codebase contributions [rights reserved](https://github.com/Tornado-Technology/after-rain/blob/master/LICENSE.md).
+The base code for the original Space Station 14 game is registered under [MIT](https://github.com/Tornado-Technology/after-rain/blob/master/SS14-LICENSE.TXT).
+
+All [After rain](https://github.com/Tornado-Technology/after-rain) codebase contributions [rights reserved](https://github.com/Tornado-Technology/after-rain/blob/master/LICENSE.md).
 
 Most assets are licensed under [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) unless stated otherwise. Assets have their license and the copyright in the metadata file. [Example](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
 
