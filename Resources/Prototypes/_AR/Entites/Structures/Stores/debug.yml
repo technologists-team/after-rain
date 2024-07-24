@@ -1,0 +1,24 @@
+- type: entity
+  parent:
+  - ARBaseStructure
+  - ARBaseDebugEntity
+  id: ARDebugStore
+  name: debug store
+  suffix: AR, DEBUG, Structures
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/VendingMachines/ammo.rsi
+    snapCardinals: true
+    layers:
+    - state: "off"
+  - type: Transform
+    noRot: true
+  - type: ActivatableUI
+    key: enum.ARStoreUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.ARStoreUiKey.Key:
+        type: ARStoreBoundUserInterface
+  - type: ARStore
+    name: debug store
+    presetId: ARDebug

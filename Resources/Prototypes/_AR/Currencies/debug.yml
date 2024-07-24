@@ -1,0 +1,4 @@
+- type: ARCurrency
+  id: ARDebugCurrency
+  entityId: ARDebugCurrency
+  name: debug dollars

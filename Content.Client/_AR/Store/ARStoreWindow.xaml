@@ -1,0 +1,57 @@
+﻿<DefaultWindow xmlns="https://spacestation14.io"
+    xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+    MinSize="512 512"
+    SetSize="512 512">
+    <BoxContainer Orientation="Vertical">
+        <!-- Header -->
+        <BoxContainer Margin="4,4,4,4" Orientation="Horizontal">
+            <!-- Balance are added here by code  -->
+            <RichTextLabel
+                Name="BalanceInfo"
+                HorizontalAlignment="Left"
+                HorizontalExpand="True" />
+        </BoxContainer>
+
+        <!-- Main content -->
+        <BoxContainer Orientation="Vertical" VerticalExpand="True">
+            <!-- Searching -->
+            <LineEdit Name="SearchBar" Margin="4" PlaceHolder="Search" HorizontalExpand="True"/>
+
+            <!-- Main panel -->
+            <PanelContainer VerticalExpand="True">
+                <PanelContainer.PanelOverride>
+                    <gfx:StyleBoxFlat BackgroundColor="#000000FF"/>
+                </PanelContainer.PanelOverride>
+
+                <!-- Content -->
+                <BoxContainer Orientation="Horizontal" VerticalExpand="True">
+                    <PanelContainer VerticalExpand="True">
+                        <PanelContainer.PanelOverride>
+                            <gfx:StyleBoxFlat BackgroundColor="#80808005"/>
+                        </PanelContainer.PanelOverride>
+
+                        <!-- Category buttons are added here by code  -->
+                        <BoxContainer Name="CategoriesContainer" Orientation="Vertical"/>
+                    </PanelContainer>
+
+                    <ScrollContainer
+                        Name="StoreListingsScroll"
+                        HScrollEnabled="False"
+                        HorizontalExpand="True"
+                        MinSize="100 256"
+                        SizeFlagsStretchRatio="2"
+                        VerticalExpand="True">
+
+                        <!-- Items are added here by code  -->
+                        <BoxContainer
+                            Name="ItemsContainer"
+                            MinSize="100 256"
+                            Orientation="Vertical"
+                            SizeFlagsStretchRatio="2"
+                            VerticalExpand="True"/>
+                    </ScrollContainer>
+                </BoxContainer>
+            </PanelContainer>
+        </BoxContainer>
+    </BoxContainer>
+</DefaultWindow>

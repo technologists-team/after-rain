@@ -1,0 +1,5 @@
+- type: ARStorePreset
+  id: ARDebug
+  categories:
+  - ARDebugTools
+  - ARDebugIngots

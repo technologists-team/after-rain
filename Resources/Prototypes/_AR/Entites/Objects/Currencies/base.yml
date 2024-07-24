@@ -1,0 +1,9 @@
+- type: entity
+  parent: ARBaseItem
+  id: ARBaseCurrency
+  name: currency
+  description: Buy me 2 cokes.
+  suffix: AR, Currency
+  abstract: true
+  components:
+  - type: ARCurrency
