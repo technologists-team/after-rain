@@ -12,10 +12,10 @@ public sealed class ARStoreItemPrototype : IPrototype
     public string ID { get; } = string.Empty;
 
     [DataField]
-    public LocId Name = "ar-store-item-ui-default-name";
+    public string Name = "name";
 
     [DataField]
-    public LocId Description = "ar-store-item-ui-default-description";
+    public string Description= "description";
 
     [DataField]
     public SpriteSpecifier? Icon;
@@ -25,6 +25,12 @@ public sealed class ARStoreItemPrototype : IPrototype
 
     [DataField]
     public int ProductCount = 1;
+
+    [ViewVariables]
+    public LocId LocName => Loc.TryGetString($"ar-store-item-{ID}-name", out var value) ? value : Name;
+
+    [ViewVariables]
+    public LocId LocDescription => Loc.TryGetString($"ar-store-item-{ID}-description", out var value) ? value : Description;
 }
 
 [Serializable, NetSerializable, DataDefinition]

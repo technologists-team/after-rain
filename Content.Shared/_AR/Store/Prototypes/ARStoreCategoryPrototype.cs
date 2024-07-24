@@ -9,8 +9,11 @@ public sealed class ARStoreCategoryPrototype : IPrototype
     public string ID { get; } = string.Empty;
 
     [DataField]
-    public LocId Name = "ar-store-category-ui-default-title";
+    public string Name = "name";
 
     [DataField]
     public HashSet<ARStoreItemEntry> Entries = new();
+
+    [ViewVariables]
+    public LocId LocName => Loc.TryGetString($"ar-store-category-{ID}-name", out var value) ? value : Name;
 }

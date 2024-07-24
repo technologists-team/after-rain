@@ -40,7 +40,7 @@ public sealed partial class ARStoreItemControl : Control
 
     private void UpdateName()
     {
-        var name = Loc.GetString(_data.Name);
+        var name = _data.LocName;
 
         if (_data.ProductCount > 1)
             name += $" x{_data.ProductCount}";
@@ -50,7 +50,7 @@ public sealed partial class ARStoreItemControl : Control
 
     private void UpdateDescription()
     {
-        var description = Loc.GetString(_data.Description);
+        var description = _data.LocDescription;
 
         ItemDescription.SetMessage(description);
     }

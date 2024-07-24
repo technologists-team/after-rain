@@ -22,7 +22,7 @@ public sealed partial class ARStoreCategoryControl : Control
 
         Category = _prototype.Index(categoryId);
 
-        SelectButton.Text = Loc.GetString(Loc.GetString(Category.Name));
+        SelectButton.Text = Category.LocName;
         SelectButton.Pressed = pressed;
         SelectButton.Group = group;
     }
