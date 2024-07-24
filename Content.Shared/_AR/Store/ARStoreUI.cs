@@ -16,11 +16,13 @@ public sealed class ARStoreUiUpdateState : BoundUserInterfaceState
 {
     public readonly Dictionary<ProtoId<ARCurrencyPrototype>, int> Currencies;
     public readonly ProtoId<ARStorePresetPrototype> PresetId;
+    public readonly string Name;
 
-    public ARStoreUiUpdateState(Dictionary<ProtoId<ARCurrencyPrototype>, int> currencies, ProtoId<ARStorePresetPrototype> presetId)
+    public ARStoreUiUpdateState(Dictionary<ProtoId<ARCurrencyPrototype>, int> currencies, ProtoId<ARStorePresetPrototype> presetId, string name)
     {
         Currencies = currencies;
         PresetId = presetId;
+        Name = name;
     }
 }
 

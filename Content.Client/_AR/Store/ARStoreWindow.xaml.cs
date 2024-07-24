@@ -33,6 +33,8 @@ public sealed partial class ARStoreWindow : DefaultWindow
 
     public void UpdateState(ARStoreUiUpdateState state)
     {
+        Title = Loc.GetString(state.Name);
+
         UpdateCategories(state.PresetId);
         UpdateBalance(state.Currencies);
     }

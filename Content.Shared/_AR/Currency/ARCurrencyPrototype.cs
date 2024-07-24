@@ -15,5 +15,5 @@ public sealed class ARCurrencyPrototype : IPrototype
     public EntProtoId? EntityId;
 
     [ViewVariables]
-    public string LocName => Loc.TryGetString(Name,  out var value, ("amount", 1)) ? value : Name;
+    public string LocName => Loc.TryGetString($"ar-currency-{ID}",  out var value, ("amount", 1)) ? value : Name;
 }

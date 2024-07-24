@@ -180,7 +180,7 @@ public sealed class ARStoreSystem : ARSharedStoreSystem
     {
         var currencies = GetBalanceFromHands(entity, user);
         var preset = entity.Comp.PresetId;
-        _userInterface.SetUiState(entity.Owner, ARStoreUiKey.Key, new ARStoreUiUpdateState(currencies, preset));
+        _userInterface.SetUiState(entity.Owner, ARStoreUiKey.Key, new ARStoreUiUpdateState(currencies, preset, entity.Comp.Name));
     }
 
     private void UpdateBalanceUI(Entity<ARStoreComponent> entity, EntityUid user)

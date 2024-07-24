@@ -9,7 +9,7 @@ namespace Content.Shared._AR.Store.Components;
 public sealed partial class ARStoreComponent : Component
 {
     [DataField]
-    public LocId Name = "ar-store-ui-default-title";
+    public string Name = string.Empty;
 
     [DataField]
     public ProtoId<ARStorePresetPrototype> PresetId;
@@ -28,4 +28,7 @@ public sealed partial class ARStoreComponent : Component
     [ViewVariables]
     public FrozenSet<ProtoId<ARCurrencyPrototype>> Currencies
         = FrozenSet<ProtoId<ARCurrencyPrototype>>.Empty;
+
+    [ViewVariables]
+    public string LocName => Loc.GetString(Name);
 }
