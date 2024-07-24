@@ -9,10 +9,11 @@ public sealed class ARCurrencyPrototype : IPrototype
     public string ID { get; } = string.Empty;
 
     [DataField]
-    public LocId Name;
+    public string Name = string.Empty;
 
     [DataField]
     public EntProtoId? EntityId;
 
-    public string LocName => Loc.GetString(Name, ("amount", 1));
+    [ViewVariables]
+    public string LocName => Loc.TryGetString(Name,  out var value, ("amount", 1)) ? value : Name;
 }

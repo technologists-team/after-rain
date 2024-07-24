@@ -16,6 +16,7 @@
   name: debug wirecutter
   description: just a test
   productId: Wirecutter
+  productCount: 3
 
 # Debug ingot
 - type: ARStoreItem

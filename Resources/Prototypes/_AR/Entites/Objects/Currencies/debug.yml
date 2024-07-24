@@ -28,7 +28,7 @@
   - type: ARCurrency
     entries:
       - id: ARDebugCurrency
-        count: 1
+        cost: 1
 
 - type: stack
   id: ARDebugCurrency
