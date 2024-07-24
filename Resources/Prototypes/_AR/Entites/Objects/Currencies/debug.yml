@@ -1,0 +1,39 @@
+- type: entity
+  parent:
+  - ARBaseCurrency
+  - ARBaseDebugEntity
+  id: ARDebugCurrency
+  name: currency
+  description: Buy me 2 cokes.
+  suffix: AR, DEBUG, Currency
+  components:
+  - type: Stack
+    stackType: ARDebugCurrency
+    count: 1
+    baseLayer: base
+    layerStates:
+    - cash
+    - cash_10
+    - cash_100
+    - cash_500
+    - cash_1000
+    - cash_1000000
+  - type: Sprite
+    sprite: Objects/Economy/cash.rsi
+    state: cash
+    layers:
+    - state: cash
+      map: ["base"]
+  - type: Appearance
+  - type: ARCurrency
+    entries:
+      - id: ARDebugCurrency
+        count: 1
+
+- type: stack
+  id: ARDebugCurrency
+  name: currency
+  icon:
+    sprite: /Textures/Objects/Economy/cash.rsi
+    state: cash
+  spawn: ARDebugCurrency

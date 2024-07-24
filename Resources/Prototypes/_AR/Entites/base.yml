@@ -1,0 +1,10 @@
+- type: entity
+  id: ARBaseEntity
+  suffix: AR
+  abstract: true
+
+- type: entity
+  parent: ARBaseEntity
+  id: ARBaseDebugEntity
+  suffix: AR, DEBUG
+  abstract: true

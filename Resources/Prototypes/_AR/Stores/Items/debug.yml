@@ -1,0 +1,31 @@
+# Debug tools
+- type: ARStoreItem
+  id: ARDebugCrowbar
+  name: debug crowbar
+  description: just a test
+  productId: Crowbar
+
+- type: ARStoreItem
+  id: ARDebugScrewdriver
+  name: debug screwdriver
+  description: just a test
+  productId: Screwdriver
+
+- type: ARStoreItem
+  id: ARDebugWirecutter
+  name: debug wirecutter
+  description: just a test
+  productId: Wirecutter
+
+# Debug ingot
+- type: ARStoreItem
+  id: ARDebugIngotGold
+  name: debug gold
+  description: just a ingot
+  productId: IngotGold
+
+- type: ARStoreItem
+  id: ARDebugIngotSilver
+  name: debug silver
+  description: just a ingot
+  productId: IngotSilver

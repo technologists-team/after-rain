@@ -1,0 +1,26 @@
+# Debug tools
+- type: ARStoreCategory
+  id: ARDebugTools
+  name: debug tools
+  entries:
+  - id: ARDebugCrowbar
+    currency: ARDebugCurrency
+    cost: 10
+  - id: ARDebugScrewdriver
+    currency: ARDebugCurrency
+    cost: 30
+  - id: ARDebugWirecutter
+    currency: ARDebugCurrency
+    cost: 5
+
+# Debug ingots
+- type: ARStoreCategory
+  id: ARDebugIngots
+  name: debug ingots
+  entries:
+  - id: ARDebugIngotGold
+    currency: ARDebugCurrency
+    cost: 500
+  - id: ARDebugIngotSilver
+    currency: ARDebugCurrency
+    cost: 350
