@@ -12,7 +12,7 @@ public sealed partial class ARStoreComponent : Component
     public string Name = string.Empty;
 
     [DataField]
-    public ProtoId<ARStorePresetPrototype> PresetId = string.Empty;
+    public ProtoId<ARStorePresetPrototype> PresetId = "ARStorePreset";
 
     [ViewVariables]
     public ARStorePresetPrototype? Preset;
