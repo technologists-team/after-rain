@@ -4,7 +4,6 @@ using Content.Server.Stack;
 using Content.Shared._AR.Currency;
 using Content.Shared._AR.Helpers;
 using Content.Shared._AR.Store;
-using Content.Shared._AR.Store.Components;
 using Content.Shared._AR.Store.Prototypes;
 using Content.Shared.UserInterface;
 using Robust.Server.GameObjects;
@@ -12,7 +11,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server._AR.Store;
 
-public sealed class ARStoreSystem : ARSharedStoreSystem
+public sealed class ARStoreSystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _prototype = default!;
 

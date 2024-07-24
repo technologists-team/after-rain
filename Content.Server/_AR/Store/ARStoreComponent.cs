@@ -3,7 +3,7 @@ using Content.Shared._AR.Currency;
 using Content.Shared._AR.Store.Prototypes;
 using Robust.Shared.Prototypes;
 
-namespace Content.Shared._AR.Store.Components;
+namespace Content.Server._AR.Store;
 
 [RegisterComponent]
 public sealed partial class ARStoreComponent : Component
@@ -12,10 +12,10 @@ public sealed partial class ARStoreComponent : Component
     public string Name = string.Empty;
 
     [DataField]
-    public ProtoId<ARStorePresetPrototype> PresetId;
+    public ProtoId<ARStorePresetPrototype> PresetId = string.Empty;
 
     [ViewVariables]
-    public ARStorePresetPrototype Preset;
+    public ARStorePresetPrototype? Preset;
 
     [ViewVariables]
     public FrozenDictionary<ARStoreCategoryPrototype, FrozenSet<ARStoreItemEntry>> Categories
