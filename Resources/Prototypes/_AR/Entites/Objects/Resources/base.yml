@@ -1,0 +1,12 @@
+- type: entity
+  parent: ARBaseItem
+  id: ARBaseResource
+  name: resource
+  suffix: AR, Resource
+  abstract: true
+
+- type: entity
+  parent: ARBaseItem
+  id: ARBaseResourceContainer
+  name: resource container
+  abstract: true

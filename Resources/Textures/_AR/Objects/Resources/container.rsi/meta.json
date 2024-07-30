@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by TornadoTech for After rain",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "concept"
+    },
+    {
+      "name": "container-active-back"
+    },
+    {
+      "name": "container-active-front"
+    },
+    {
+      "name": "container-base-back"
+    },
+    {
+      "name": "container-base-front"
+    },
+    {
+      "name": "content-base"
+    },
+    {
+      "name": "content-delta"
+    },
+    {
+      "name": "content-epsilon"
+    },
+    {
+      "name": "content-omega"
+    }
+  ]
+}
