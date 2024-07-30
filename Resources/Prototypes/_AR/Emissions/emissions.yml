@@ -1,0 +1,11 @@
+- type: AREmission
+  id: ARDelta
+  color: "#39ffab"
+
+- type: AREmission
+  id: AREpsilon
+  color: "#e73bf7"
+
+- type: AREmission
+  id: AROmega
+  color: "#ffffff"

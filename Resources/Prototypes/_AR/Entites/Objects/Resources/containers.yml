@@ -1,0 +1,98 @@
+- type: entity
+  parent: ARBaseResourceContainer
+  id: ARBaseEmissionContainer
+  name: emission container
+  description: Gravity trap to trap most types of emission.
+  abstract: true
+  components:
+  - type: Appearance
+  - type: AREmissionContainer
+    solution:
+      maxVolume: 100
+  - type: GenericVisualizer
+    visuals:
+      enum.AREmissionContainerVisuals.Active:
+        enum.AREmissionContainerVisuals.LayerBack:
+          True:
+            state: container-active-back
+          False:
+            state: container-base-back
+        enum.AREmissionContainerVisuals.LayerContent:
+          True:
+            visible: true
+          False:
+            visible: false
+        enum.AREmissionContainerVisuals.LayerFront:
+          True:
+            state: container-active-front
+          False:
+            state: container-base-front
+  - type: Item
+    size: Normal
+  - type: Sprite
+    sprite: _AR/Objects/Resources/container.rsi
+    layers:
+      - state: container-base-back
+        map: [ "enum.AREmissionContainerVisuals.LayerBack" ]
+      - state: content-base
+        map: [ "enum.AREmissionContainerVisuals.LayerContent" ]
+        shader: unshaded
+      - state: container-base-front
+        map: [ "enum.AREmissionContainerVisuals.LayerFront" ]
+
+- type: entity
+  parent: ARBaseEmissionContainer
+  id: AREmissionContainer
+  suffix: AR, Empty
+
+- type: entity
+  parent: ARBaseEmissionContainer
+  id: AREmissionContainerDelta
+  suffix: AR, Delta
+  components:
+  - type: AREmissionContainer
+    solution:
+      contents:
+        - id: ARDelta
+          quantity: 100
+      maxVolume: 100
+
+- type: entity
+  parent: ARBaseEmissionContainer
+  id: AREmissionContainerEpsilon
+  suffix: AR, Epsilon
+  components:
+  - type: AREmissionContainer
+    solution:
+      contents:
+        - id: AREpsilon
+          quantity: 100
+      maxVolume: 100
+
+- type: entity
+  parent: ARBaseEmissionContainer
+  id: AREmissionContainerOmega
+  suffix: AR, Omega
+  components:
+  - type: AREmissionContainer
+    solution:
+      contents:
+        - id: AROmega
+          quantity: 100
+      maxVolume: 100
+
+- type: entity
+  parent: ARBaseEmissionContainer
+  id: AREmissionContainerAll
+  suffix: AR, All
+  components:
+  - type: AREmissionContainer
+    solution:
+      contents:
+        - id: ARDelta
+          quantity: 100
+        - id: AREpsilon
+          quantity: 100
+        - id: AROmega
+          quantity: 100
+      maxVolume: 300
