@@ -1,0 +1,52 @@
+- type: entity
+  parent: ARBaseResource
+  id: ARPlanksBase
+  name: planks
+  abstract: true
+  components:
+  - type: Appearance
+  - type: Item
+    sprite: _AR/Objects/Resources/planks.rsi
+    size: Normal
+  - type: Sprite
+    sprite: _AR/Objects/Resources/planks.rsi
+
+- type: entity
+  parent: ARPlanksBase
+  id: ARPlanks
+  name: planks
+  suffix: AR, 15
+  components:
+  - type: Stack
+    stackType: ARPlanks
+    baseLayer: base
+    layerStates:
+    - planks_1
+    - planks_2
+    - planks_3
+  - type: Sprite
+    state: planks_1
+    layers:
+    - state: planks_1
+      map: ["base"]
+  - type: Item
+    heldPrefix: gold
+
+
+- type: entity
+  parent: ARPlanks
+  id: ARPlanks1
+  suffix: AR, 1
+  components:
+  - type: Stack
+    count: 1
+
+
+- type: stack
+  id: ARPlanks
+  name: planks
+  icon:
+    sprite: "/Textures/_AR/Objects/Resources/planks.rsi"
+    state: base
+  spawn: ARPlanks1
+  maxCount: 15
