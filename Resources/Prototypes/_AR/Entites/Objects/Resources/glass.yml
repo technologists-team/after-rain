@@ -1,0 +1,49 @@
+- type: entity
+  parent: ARBaseResource
+  id: ARGlassBase
+  name: glass
+  abstract: true
+  components:
+  - type: Appearance
+  - type: Item
+    sprite: _AR/Objects/Resources/glass.rsi
+    size: Normal
+    heldPrefix: glass
+  - type: Sprite
+    sprite: _AR/Objects/Resources/glass.rsi
+
+- type: entity
+  parent: ARGlassBase
+  id: ARGlass
+  name: glass
+  suffix: AR, 15
+  components:
+  - type: Stack
+    stackType: ARGlass
+    baseLayer: base
+    layerStates:
+    - glass_1
+    - glass_2
+    - glass_3
+  - type: Sprite
+    state: glass_3
+    layers:
+    - state: glass_3
+      map: ["base"]
+
+- type: entity
+  parent: ARGlass
+  id: ARGlass1
+  suffix: AR, 1
+  components:
+  - type: Stack
+    count: 1
+
+- type: stack
+  id: ARGlass
+  name: glass
+  icon:
+    sprite: "/Textures/_AR/Objects/Resources/glass.rsi"
+    state: base
+  spawn: ARGlass1
+  maxCount: 15

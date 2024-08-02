@@ -8,6 +8,7 @@
   - type: Item
     sprite: _AR/Objects/Resources/planks.rsi
     size: Normal
+    heldPrefix: planks
   - type: Sprite
     sprite: _AR/Objects/Resources/planks.rsi
 
@@ -29,8 +30,6 @@
     layers:
     - state: planks_1
       map: ["base"]
-  - type: Item
-    heldPrefix: gold
 
 
 - type: entity
