@@ -44,6 +44,6 @@
   name: planks
   icon:
     sprite: "/Textures/_AR/Objects/Resources/planks.rsi"
-    state: base
+    state: planks_1
   spawn: ARPlanks1
   maxCount: 15

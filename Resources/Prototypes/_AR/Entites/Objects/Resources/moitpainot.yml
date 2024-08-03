@@ -47,6 +47,6 @@
   name: moitpainot
   icon:
     sprite: "/Textures/_AR/Objects/Resources/moitpainot.rsi"
-    state: base
+    state: moitpainot_1
   spawn: ARMoitpainot1
   maxCount: 15

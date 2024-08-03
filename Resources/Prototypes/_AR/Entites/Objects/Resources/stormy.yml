@@ -44,6 +44,6 @@
   name: stormy
   icon:
     sprite: "/Textures/_AR/Objects/Resources/stormy.rsi"
-    state: base
+    state: stormy_1
   spawn: ARStormy1
   maxCount: 15

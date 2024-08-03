@@ -44,6 +44,6 @@
   name: steel scrap
   icon:
     sprite: "/Textures/_AR/Objects/Resources/scrap.rsi"
-    state: base
+    state: steel_1
   spawn: ARSteelScrap1
   maxCount: 10
