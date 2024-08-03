@@ -16,7 +16,7 @@
   parent: ARScrapBase
   id: ARSteelScrap
   name: steel scrap
-  suffix: AR, 15
+  suffix: AR, 10
   components:
   - type: Stack
     stackType: ARSteelScrap
