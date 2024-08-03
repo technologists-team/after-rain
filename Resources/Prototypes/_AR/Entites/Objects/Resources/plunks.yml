@@ -31,7 +31,6 @@
     - state: planks_1
       map: ["base"]
 
-
 - type: entity
   parent: ARPlanks
   id: ARPlanks1
@@ -39,7 +38,6 @@
   components:
   - type: Stack
     count: 1
-
 
 - type: stack
   id: ARPlanks
