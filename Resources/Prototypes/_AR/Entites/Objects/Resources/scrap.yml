@@ -1,0 +1,49 @@
+- type: entity
+  parent: ARBaseResource
+  id: ARScrapBase
+  name: scrap
+  abstract: true
+  components:
+  - type: Appearance
+  - type: Item
+    sprite: _AR/Objects/Resources/scrap.rsi
+    size: Normal
+    heldPrefix: scrap
+  - type: Sprite
+    sprite: _AR/Objects/Resources/scrap.rsi
+
+- type: entity
+  parent: ARScrapBase
+  id: ARSteelScrap
+  name: steel scrap
+  suffix: AR, 10
+  components:
+  - type: Stack
+    stackType: ARSteelScrap
+    baseLayer: base
+    layerStates:
+    - steel_1
+    - steel_2
+    - steel_3
+  - type: Sprite
+    state: steel_1
+    layers:
+    - state: steel_1
+      map: ["base"]
+
+- type: entity
+  parent: ARSteelScrap
+  id: ARSteelScrap1
+  suffix: AR, 1
+  components:
+  - type: Stack
+    count: 1
+
+- type: stack
+  id: ARSteelScrap
+  name: steel scrap
+  icon:
+    sprite: "/Textures/_AR/Objects/Resources/scrap.rsi"
+    state: steel_1
+  spawn: ARSteelScrap1
+  maxCount: 10

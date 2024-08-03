@@ -1,10 +1,18 @@
 ﻿using Content.Shared.Hands.Components;
 using Robust.Shared.Containers;
+using Robust.Shared.Map.Components;
+using Robust.Shared.Physics;
 
 namespace Content.Shared._AR.Helpers;
 
 public static class ContainerHelper
 {
+    public static bool InMapOrGrid(EntityUid entityUid, IEntityManager entityManager)
+    {
+        var parent = entityManager.GetComponent<TransformComponent>(entityUid).ParentUid;
+        return entityManager.HasComponent<MapComponent>(parent) || entityManager.HasComponent<MapGridComponent>(parent);
+    }
+
     public static IEnumerable<EntityUid> EnumerateElementsFromHands(Entity<HandsComponent?> entity, IEntityManager entityManager)
     {
         if (entity.Comp is null && !entityManager.TryGetComponent(entity, out entity.Comp))

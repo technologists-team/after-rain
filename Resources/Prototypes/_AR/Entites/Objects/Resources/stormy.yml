@@ -1,0 +1,49 @@
+- type: entity
+  parent: ARBaseResource
+  id: ARStormyBase
+  name: stormy
+  abstract: true
+  components:
+  - type: Appearance
+  - type: Item
+    sprite: _AR/Objects/Resources/stormy.rsi
+    size: Normal
+    heldPrefix: stormy
+  - type: Sprite
+    sprite: _AR/Objects/Resources/stormy.rsi
+
+- type: entity
+  parent: ARStormyBase
+  id: ARStormy
+  name: stormy
+  suffix: AR, 15
+  components:
+  - type: Stack
+    stackType: ARStormy
+    baseLayer: base
+    layerStates:
+    - stormy_1
+    - stormy_2
+    - stormy_3
+  - type: Sprite
+    state: stormy_3
+    layers:
+    - state: stormy_3
+      map: ["base"]
+
+- type: entity
+  parent: ARStormy
+  id: ARStormy1
+  suffix: AR, 1
+  components:
+  - type: Stack
+    count: 1
+
+- type: stack
+  id: ARStormy
+  name: stormy
+  icon:
+    sprite: "/Textures/_AR/Objects/Resources/stormy.rsi"
+    state: stormy_1
+  spawn: ARStormy1
+  maxCount: 15

@@ -1,0 +1,52 @@
+- type: entity
+  parent: ARBaseResource
+  id: ARMoitpainotBase
+  name: moitpainot
+  abstract: true
+  components:
+  - type: Appearance
+  - type: ARFloating
+    animationTime: 2
+    offset: 0, 0.35
+  - type: Item
+    sprite: _AR/Objects/Resources/moitpainot.rsi
+    size: Normal
+    heldPrefix: moitpainot
+  - type: Sprite
+    sprite: _AR/Objects/Resources/moitpainot.rsi
+
+- type: entity
+  parent: ARMoitpainotBase
+  id: ARMoitpainot
+  name: moitpainot
+  suffix: AR, 15
+  components:
+  - type: Stack
+    stackType: ARMoitpainot
+    baseLayer: base
+    layerStates:
+    - moitpainot_1
+    - moitpainot_2
+    - moitpainot_3
+  - type: Sprite
+    state: moitpainot_3
+    layers:
+    - state: moitpainot_3
+      map: ["base"]
+
+- type: entity
+  parent: ARMoitpainot
+  id: ARMoitpainot1
+  suffix: AR, 1
+  components:
+  - type: Stack
+    count: 1
+
+- type: stack
+  id: ARMoitpainot
+  name: moitpainot
+  icon:
+    sprite: "/Textures/_AR/Objects/Resources/moitpainot.rsi"
+    state: moitpainot_1
+  spawn: ARMoitpainot1
+  maxCount: 15
