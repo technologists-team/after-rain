@@ -1,4 +1,5 @@
 ﻿using Content.Shared._AR.Math;
+using Content.Shared._AR.Math.Procedural;
 using Content.Shared.Mobs.Components;
 
 namespace Content.Shared._AR.Vine;
@@ -17,10 +18,12 @@ public abstract class ARSharedVineSystem : EntitySystem
 
     private void OnMapInit(Entity<ARVineComponent> entity, ref MapInitEvent args)
     {
-        entity.Comp.Fabric = new ARFabric(_transform.GetWorldPosition(entity),
+        entity.Comp.Fabric = new IKFabric2D(
+            _transform.GetWorldPosition(entity),
             entity.Comp.Segments,
-            MathF.PI / 4,
-            entity.Comp.SegmentLength);
+            entity.Comp.SegmentLength,
+            entity.Comp.Fixed
+        );
     }
 
     protected void UpdateTarget(Entity<ARVineComponent> entity)
@@ -31,10 +34,12 @@ public abstract class ARSharedVineSystem : EntitySystem
         var distance = float.MaxValue;
         foreach (var target in targets)
         {
-            if ((_transform.GetWorldPosition(target) - _transform.GetWorldPosition(entity)).LengthSquared() > distance * distance)
+            var delta = (_transform.GetWorldPosition(target) - _transform.GetWorldPosition(entity)).LengthSquared();
+            if (delta > distance * distance)
                 continue;
 
             entity.Comp.Target = _transform.GetWorldPosition(target);
+            distance = delta;
         }
     }
 
@@ -42,8 +47,9 @@ public abstract class ARSharedVineSystem : EntitySystem
     {
         UpdateTarget(entity);
 
-        entity.Comp.Fabric.Position = _transform.GetWorldPosition(entity);
-        entity.Comp.Fabric.Target = entity.Comp.Target;
+        entity.Comp.Fabric.SetPosition(_transform.GetWorldPosition(entity));
+        entity.Comp.Fabric.SetTarget(entity.Comp.Target);
+        entity.Comp.Fabric.SetFixed(entity.Comp.Fixed);
         entity.Comp.Fabric.Update();
     }
 }
