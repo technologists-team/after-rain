@@ -1,0 +1,55 @@
+- type: entity
+  parent:
+  - SimpleMobBase
+  - MobCombat
+  id: ARBaseMobNokka
+  name: nokka
+  abstract: true
+  components:
+  - type: HTN
+    rootTask:
+      task: ARNokkaCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: NpcFactionMember
+    factions:
+    - ARNokkas
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _AR/Mobs/nokka.rsi
+    state: concept
+  - type: MovementAlwaysTouching
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 1.75
+    baseSprintSpeed: 2.625
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      150: Dead
+  - type: Stamina
+    critThreshold: 500
+  - type: Bloodstream
+    bloodMaxVolume: 100
+  - type: CombatMode
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Piercing: 10
+
+- type: entity
+  parent: ARBaseMobNokka
+  id: ARMobNokka

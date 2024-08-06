@@ -1,0 +1,56 @@
+- type: entity
+  parent:
+  - SimpleMobBase
+  - MobCombat
+  id: ARBaseMobKatr
+  name: katr
+  abstract: true
+  components:
+  - type: HTN
+    rootTask:
+      task: ARKatrCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: NpcFactionMember
+    factions:
+    - ARKatrs
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _AR/Mobs/katr.rsi
+    state: katr_epsilon_walk
+  - type: MovementAlwaysTouching
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 1.2
+    baseSprintSpeed: 1.7
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      400: Dead
+  - type: Stamina
+    critThreshold: 270
+  - type: Bloodstream
+    bloodMaxVolume: 100
+  - type: CombatMode
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 10
+        Structural: 25
+
+- type: entity
+  parent: ARBaseMobKatr
+  id: ARMobKatrEpsilon

@@ -1,0 +1,23 @@
+- type: npcFaction
+  id: ARHumans
+
+- type: npcFaction
+  id: ARSateinens
+
+- type: npcFaction
+  id: ARFireflies
+
+- type: npcFaction
+  id: ARKatrs
+  hostile:
+  - ARHumans
+  - ARSateinens
+  - ARKatrs
+  - ARNokkas
+
+- type: npcFaction
+  id: ARNokkas
+  hostile:
+  - ARHumans
+  - ARSateinens
+  - ARKatrs
