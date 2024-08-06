@@ -1,0 +1,40 @@
+- type: entity
+  parent:
+  - SimpleMobBase
+  - FlyingMobBase
+  id: ARBaseMobFireflies
+  name: firefly
+  abstract: true
+  components:
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 6
+    baseSprintSpeed: 6
+  - type: NpcFactionMember
+    factions:
+    - ARFireflies
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _AR/Mobs/fireflies.rsi
+    state: firefly
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.2
+        density: 7.5
+        mask:
+        - FlyingMobMask
+        layer:
+        - FlyingMobLayer
+  - type: MobState
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      10: Dead
+  - type: Bloodstream
+    bloodMaxVolume: 0.1
+
+- type: entity
+  parent: ARBaseMobFireflies
+  id: ARMobFireflies

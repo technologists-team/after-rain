@@ -5,6 +5,9 @@
   id: ARSateinens
 
 - type: npcFaction
+  id: ARFireflies
+
+- type: npcFaction
   id: ARKatrs
   hostile:
   - ARHumans
