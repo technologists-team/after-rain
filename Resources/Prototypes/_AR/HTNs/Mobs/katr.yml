@@ -1,0 +1,10 @@
+- type: htnCompound
+  id: ARKatrCompound
+  branches:
+    - tasks:
+      - !type:HTNCompoundTask
+        task: MeleeCombatCompound
+
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompound

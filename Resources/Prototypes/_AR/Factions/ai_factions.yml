@@ -1,0 +1,127 @@
+- type: npcFaction
+  id: Dragon
+  hostile:
+  # AR
+  - ARHumans
+  - ARSateinens
+  - ARKatrs
+  - ARNokkas
+  # SS14
+  - NanoTrasen
+  - Syndicate
+  - Xeno
+  - PetsNT
+  - Zombie
+  - Revolutionary
+
+- type: npcFaction
+  id: NanoTrasen
+  hostile:
+  # AR
+  - ARHumans
+  - ARSateinens
+  - ARKatrs
+  - ARNokkas
+  # SS14
+  - SimpleHostile
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+
+- type: npcFaction
+  id: Mouse
+  hostile:
+    - PetsNT
+
+- type: npcFaction
+  id: Passive
+
+- type: npcFaction
+  id: PetsNT
+  hostile:
+  - Mouse
+  - SimpleHostile
+  - Zombie
+  - Xeno
+
+- type: npcFaction
+  id: SimpleHostile
+  hostile:
+  # AR
+  - ARHumans
+  - ARSateinens
+  - ARKatrs
+  - ARNokkas
+  # SS14
+  - NanoTrasen
+  - Syndicate
+  - Passive
+  - PetsNT
+  - Zombie
+  - Revolutionary
+
+- type: npcFaction
+  id: SimpleNeutral
+
+- type: npcFaction
+  id: Syndicate
+  hostile:
+  # AR
+  - ARHumans
+  - ARSateinens
+  - ARKatrs
+  - ARNokkas
+  # SS14
+  - NanoTrasen
+  - SimpleHostile
+  - Xeno
+  - PetsNT
+  - Zombie
+
+- type: npcFaction
+  id: Xeno
+  hostile:
+  # AR
+  - ARHumans
+  - ARSateinens
+  - ARKatrs
+  - ARNokkas
+  # SS14
+  - NanoTrasen
+  - Syndicate
+  - Passive
+  - PetsNT
+  - Zombie
+  - Revolutionary
+
+- type: npcFaction
+  id: Zombie
+  hostile:
+  # AR
+  - ARHumans
+  - ARSateinens
+  - ARKatrs
+  - ARNokkas
+  # SS14
+  - NanoTrasen
+  - SimpleNeutral
+  - SimpleHostile
+  - Syndicate
+  - Passive
+  - PetsNT
+  - Revolutionary
+
+- type: npcFaction
+  id: Revolutionary
+  hostile:
+  # AR
+  - ARHumans
+  - ARSateinens
+  - ARKatrs
+  - ARNokkas
+  # SS14
+  - NanoTrasen
+  - Zombie
+  - SimpleHostile
+  - Dragon

@@ -6,3 +6,6 @@
 #
 # - /Prototypes/Guidebook
 # - /Prototypes/Catalog/uplink_catalog.yml
+
+# See custom in /Prototypes/_AR/Factions/ai_factions.yml
+- /Prototypes/ai_factions.yml

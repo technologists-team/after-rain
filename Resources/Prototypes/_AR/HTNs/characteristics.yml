@@ -1,0 +1,15 @@
+- type: htnCompound
+  id: ARGetBaseCharacteristicsCompound
+  branches:
+    - tasks:
+      - !type:HTNCompoundTask
+        task: ARGetDamageCompound
+
+- type: htnCompound
+  id: ARGetDamageCompound
+  branches:
+    - tasks:
+      - !type:HTNPrimitiveTask
+        operator: !type:SetFloatOperator
+          targetKey: TotalDamage
+          amount: 10
