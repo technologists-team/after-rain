@@ -1,0 +1,26 @@
+- type: tile
+  baseTurf: ARFloorBase
+  id: ARFloorGrass
+  name: ar-tiles-grass
+  editorHidden: false
+  sprite: /Textures/_AR/Tiles/grass/grass.png
+  variants: 3
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  edgeSpritePriority: 2
+  edgeSprites:
+    SouthEast: /Textures/_AR/Tiles/grass/grass_single_edge.png
+    NorthEast: /Textures/_AR/Tiles/grass/grass_single_edge.png
+    NorthWest: /Textures/_AR/Tiles/grass/grass_single_edge.png
+    SouthWest: /Textures/_AR/Tiles/grass/grass_single_edge.png
+    South: /Textures/_AR/Tiles/grass/grass_edge.png
+    East: /Textures/_AR/Tiles/grass/grass_edge.png
+    North: /Textures/_AR/Tiles/grass/grass_edge.png
+    West: /Textures/_AR/Tiles/grass/grass_edge.png
+  footstepSounds:
+    collection: FootstepGrass
+  isSubfloor: false
+  heatCapacity: 10000
+  weather: true

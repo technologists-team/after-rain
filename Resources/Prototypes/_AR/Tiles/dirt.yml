@@ -1,0 +1,24 @@
+- type: tile
+  baseTurf: ARFloorBase
+  id: ARFloorDirt
+  name: ar-tiles-dirt
+  editorHidden: false
+  sprite: /Textures/_AR/Tiles/dirt/dirt.png
+  variants: 1
+  placementVariants:
+  - 1.0
+  edgeSpritePriority: 1
+  edgeSprites:
+    SouthEast: /Textures/_AR/Tiles/dirt/dirt_single_edge.png
+    NorthEast: /Textures/_AR/Tiles/dirt/dirt_single_edge.png
+    NorthWest: /Textures/_AR/Tiles/dirt/dirt_single_edge.png
+    SouthWest: /Textures/_AR/Tiles/dirt/dirt_single_edge.png
+    South: /Textures/_AR/Tiles/dirt/dirt_edge.png
+    East: /Textures/_AR/Tiles/dirt/dirt_edge.png
+    North: /Textures/_AR/Tiles/dirt/dirt_edge.png
+    West: /Textures/_AR/Tiles/dirt/dirt_edge.png
+  footstepSounds:
+    collection: FootstepAsteroid # TODO: Add new collection
+  isSubfloor: false
+  heatCapacity: 10000
+  weather: true

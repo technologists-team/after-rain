@@ -1,0 +1,197 @@
+- type: decal
+  id: ARGrassBushes1
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_bushes1
+
+- type: decal
+  id: ARGrassBushes2
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_bushes2
+
+- type: decal
+  id: ARGrassBushes3
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_bushes3
+
+- type: decal
+  id: ARGrassBushes4
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_bushes4
+
+- type: decal
+  id: ARGrassBushes5
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_bushes5
+
+- type: decal
+  id: ARGrassBushes6
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_bushes6
+
+- type: decal
+  id: ARGrassBushes7
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_bushes7
+
+- type: decal
+  id: ARGrassBushes8
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_bushes8
+
+- type: decal
+  id: ARGrassBushes9
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_bushes9
+
+- type: decal
+  id: ARGrassShort1
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_short1
+
+- type: decal
+  id: ARGrassShort2
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_short2
+
+- type: decal
+  id: ARGrassShort3
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_short3
+
+- type: decal
+  id: ARGrassShort4
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_short4
+
+- type: decal
+  id: ARGrassShort5
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_short5
+
+- type: decal
+  id: ARGrassShort6
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_short6
+
+- type: decal
+  id: ARGrassShort7
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_short7
+
+- type: decal
+  id: ARGrassShort8
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_short8
+
+- type: decal
+  id: ARGrassShort9
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_short9
+
+- type: decal
+  id: ARGrassShort10
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_short10
+
+- type: decal
+  id: ARGrassShort11
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_short11
+
+- type: decal
+  id: ARGrassShort12
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_short13
+
+- type: decal
+  id: ARGrassShort14
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _AR/Decals/Flora/flora_grass.rsi
+    state: grass_short14
