@@ -1,0 +1,14 @@
+- type: tile
+  baseTurf: ARFloorBase
+  id: ARFloorSand
+  name: ar-tiles-sand
+  editorHidden: false
+  sprite: /Textures/_AR/Tiles/sand/sand.png
+  variants: 1
+  placementVariants:
+  - 1.0
+  footstepSounds:
+    collection: FootstepSnow # TODO: Add new collection
+  isSubfloor: false
+  heatCapacity: 10000
+  weather: true
