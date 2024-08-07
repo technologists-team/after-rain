@@ -7,6 +7,16 @@
   variants: 1
   placementVariants:
   - 1.0
+  edgeSpritePriority: 1
+  edgeSprites:
+    SouthEast: /Textures/_AR/Tiles/dirt/dirt_single_edge.png
+    NorthEast: /Textures/_AR/Tiles/dirt/dirt_single_edge.png
+    NorthWest: /Textures/_AR/Tiles/dirt/dirt_single_edge.png
+    SouthWest: /Textures/_AR/Tiles/dirt/dirt_single_edge.png
+    South: /Textures/_AR/Tiles/dirt/dirt_edge.png
+    East: /Textures/_AR/Tiles/dirt/dirt_edge.png
+    North: /Textures/_AR/Tiles/dirt/dirt_edge.png
+    West: /Textures/_AR/Tiles/dirt/dirt_edge.png
   footstepSounds:
     collection: FootstepAsteroid # TODO: Add new collection
   isSubfloor: false
