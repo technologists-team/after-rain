@@ -1,0 +1,11 @@
+- type: ARDayCyclePeriod
+  id: ARSunrise # HOLY SHIT!
+
+- type: ARDayCyclePeriod
+  id: ARDay
+
+- type: ARDayCyclePeriod
+  id: ARNight
+
+- type: ARDayCyclePeriod
+  id: AREvening
