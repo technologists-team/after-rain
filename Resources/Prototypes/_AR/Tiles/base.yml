@@ -1,0 +1,17 @@
+- type: tile
+  baseTurf: ARFloorBase # Recursive indestructible
+  id: ARFloorBase
+  name: ar-tiles-base
+  editorHidden: true
+  sprite: /Textures/_AR/Tiles/Grass/grass.png
+  variants: 3
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+  weather: true
+  indestructible: true
