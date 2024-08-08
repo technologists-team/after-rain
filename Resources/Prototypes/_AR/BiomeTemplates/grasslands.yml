@@ -1,0 +1,80 @@
+# Use https://auburn.github.io/FastNoiseLite/ to Preview
+- type: biomeTemplate
+  id: ARGrassFill
+  layers:
+    - !type:BiomeTileLayer
+      threshold: -1.0
+      tile: ARFloorGrass
+    - !type:BiomeTileLayer
+      tile: ARFloorDirt
+      threshold: 0.45
+      noise:
+        seed: 0
+        noiseType: OpenSimplex2
+        fractalType: Ridged
+        frequency: 0.05
+        octaves: 3
+        lacunarity: 1.8
+        gain: 0.7
+        domainWarpType: OpenSimplex2
+        domainWarpAmp: 120
+
+- type: biomeTemplate
+  id: ARGrassland
+  layers:
+    - !type:BiomeMetaLayer
+      template: ARGrassFill
+    - !type:BiomeDecalLayer
+      allowedTiles:
+      - ARFloorGrass
+      threshold: 0
+      divisions: 1
+      noise:
+        seed: 12
+        noiseType: OpenSimplex2
+        fractalType: Ridged
+        frequency: 0.05
+        octaves: 3
+        lacunarity: 1.8
+        gain: 0.7
+        domainWarpType: OpenSimplex2
+        domainWarpAmp: 120
+      decals:
+        - ARGrassBushes1
+        - ARGrassBushes3
+        - ARGrassBushes4
+        - ARGrassBushes5
+        - ARGrassBushes6
+        - ARGrassBushes7
+        - ARGrassBushes8
+        - ARGrassBushes9
+    - !type:BiomeDecalLayer
+      allowedTiles:
+      - ARFloorGrass
+      threshold: 0.35
+      divisions: 1
+      noise:
+        seed: 12
+        noiseType: OpenSimplex2
+        fractalType: Ridged
+        frequency: 0.05
+        octaves: 3
+        lacunarity: 1.8
+        gain: 0.7
+        domainWarpType: OpenSimplex2
+        domainWarpAmp: 120
+      decals:
+        - ARGrassShort1
+        - ARGrassShort2
+        - ARGrassShort3
+        - ARGrassShort4
+        - ARGrassShort5
+        - ARGrassShort6
+        - ARGrassShort7
+        - ARGrassShort8
+        - ARGrassShort9
+        - ARGrassShort10
+        - ARGrassShort11
+        - ARGrassShort12
+        - ARGrassShort13
+        - ARGrassShort14
